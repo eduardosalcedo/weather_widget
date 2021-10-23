@@ -28,7 +28,7 @@ function renderLocation(locations) {
 // weather.icon: for icon used with description
 // main.temp: for current temperature
 // main.feels_like: for feels like temperature
-
+// df: used for time ** use Date(df * 1000).toLocaleTimeString()   to have it show with just the time and not date and time **
 
     // inserts an image for each user - img found in json file
     var img = document.createElement('img')
