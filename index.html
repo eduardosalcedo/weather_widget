@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Weather</title>
+  </head>
+  <body>
+    <header>
+      <h1>Current Weather</h1>
+    </header>
+    <main>
+      <section id="weather"></section>
+        <!--
+        insert h2 HERE with city, state using javascript
+        OPTIONAL insert an <a href="link to google maps HERE"
+        insert image with <img src="weather.icon"> HERE must place an address like this: https://openweathermap.org/img/wn/NAME@2x.png
+        insert <p> HERE with weather.description using javascript
+        insert line break <br>
+        insert <p> HERE with main.temp using javascript ** text: "Current: " **
+        insert line break <br>
+        insert <p> HERE with main.feels_like using javascript ** text: "Feels like: "
+        insert line break <br>
+        OPTIONAL insert <p> HERE with dt using javascript **text: "Last updated: " ** this gives the current time **
+            use Date(df * 1000).toLocaleTimeString()   to have it show with just the time and not date and time
+        -->
+      <form>
+        <input name="search" id="weather-search" type="text" placeholder=" ">
+        <label for="weather-search"> Enter location </label>
+        <button type="submit">Search</button>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
