@@ -22,10 +22,6 @@ btn.onclick = function() {
 function renderLocation(locations) {
   locations.forEach(function(loc) {
     var container = document.querySelector('input').value
-    // inserts an image for each user - img found in json file
-    var img = document.createElement('img')
-    img.src = loc.picture.medium
-    container.appendChild(img)
 
 // values
 // weather.description: for cloudy, overcast, etc.
@@ -34,6 +30,10 @@ function renderLocation(locations) {
 // main.feels_like: for feels like temperature
 
 
+    // inserts an image for each user - img found in json file
+    var img = document.createElement('img')
+    img.src = loc.picture.medium
+    container.appendChild(img)
     // inserts user title, name and last name
     var cityZip = document.createElement('h3')
     loc.textContent = loc.name.title + " " + loc.name.first + " " + loc.name.last
